@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Player Music</title>
+</head>
+
+<body>
+    <div class="backgroundImage"></div>
+    <div class="loading">
+        <i class="fas fa-circle-notch fa-spin" id="loading"></i>
+    </div>
+    <div class="container">
+        <div class="containerImage">
+            <div id="imageDisk" class="image">
+                <div id="disk" class="disk">
+                    <img src="./img/disk.png" width="240px" height="240px" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="containerInformation">
+            <div class="information">
+                <h1 id="music-title">Short Title</h1>
+                <h4 id="music-artist">Autor</h4>
+            </div>
+            <div class="search">
+                <div class="input">
+                    <input type="text" id="searching" placeholder="Search a song/artist...">
+                </div>
+                <div class="icon" onclick="searchingMusic()">
+                    <i id="search" class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="containerPlayer">
+            <div class="player">
+                <div class="atualTime">
+                    <p id="atual-time">0:00</p>
+                </div>
+
+                <div class="controller">
+                    <div class="previous">
+                        <i class="fas fa-backward" id="previousMusic"></i>
+                    </div>
+                    <div class="play">
+                        <i class="fas fa-play" id="playPause"></i>
+                    </div>
+                    <div class="next">
+                        <i class="fas fa-forward" id="nextMusic"></i>
+                    </div>
+                </div>
+
+                <div class="totalTime">
+                    <p>0:30</p>
+                </div>
+            </div>
+            <div id="progress" class="progressBar">
+
+            </div>
+        </div>
+    </div>
+    <audio id="audio-music"></audio>
+</body>
+
+<script src="./app.js"></script>
+<script src="https://kit.fontawesome.com/2c1367e3e9.js" crossorigin="anonymous"></script>
+
+</html>
